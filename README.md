@@ -4,21 +4,17 @@ This project aims to remove a lot of the complexity of dealing with the GPIO and
 
 This project has been initially developed for use within my own classes that I teach but I hope it might find use for others too.
 
-## PROJECT HOME
-
-* [EasyAsPi homepage](https://pbaumgarten.com/easyaspi)
-
-## GETTING STARTED
+## Getting started
 
 This assumes you have a Raspberry Pi (and a PiCamera to use that functionality). All code tested on Raspberry Pi model 3, PiCamera model 2, running Raspbian 2018-06-29.
 
-## INSTALL
+## Install
 
 ```
 pip install easyaspi
 ```
 
-## USAGE
+## Usage
 
 At present, the project supports LEDs, buttons, ultrasonics and the PiCamera. This list of tools is expected to grow as need arises.
 
@@ -45,7 +41,7 @@ led.set(True)
 led.set(False)
 ```
 
-### BUTTONs
+### Buttons
 
 * Create the Button object
 
@@ -77,7 +73,7 @@ button.on_press(was_pressed)
 button.remove_on_press()            # Remove any event listener for this button
 ```
 
-### ULTRASONIC
+### Ultrasonic
 
 * Create the Ultrasonic variable
 
@@ -92,7 +88,7 @@ ultra = easyaspi.Ultrasonic( trigger_pin_number, echo_pin_number )
 distance = ultra.get_distance()
 ```
 
-### PICAMERA
+### Pi Camera
 
 * Create the Camera object
 
@@ -137,11 +133,11 @@ camera.stop()
 camera.preview(False)
 ```
 
-## AUTHOR
+## Author
 
 * [Paul Baumgarten](https://pbaumgarten.com/)
 
-## LICENSE
+## License
 
 MIT License (C) 2018 Paul Baumgarten
 
